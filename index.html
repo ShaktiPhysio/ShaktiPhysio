@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAKTI Physiotherapy and Fitness Center | Dr. Mena Jivani | Gotri, Vadodara</title>
+    <meta name="description" content="SHAKTI Physiotherapy & Fitness Center - Move Better, Live Stronger. 10+ years experience, 1000+ patients treated. Dr. Mena Jivani - BPT, McKenzie Therapy Specialist. Expert care for joint pain, sciatica, arthritis in Gotri, Vadodara.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0d6b7f;
+            --secondary-color: #2c9db5;
+            --accent-color: #4caf50;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f0f7f9;
+            --bg-white: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 8px rgba(13, 107, 127, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-section img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2.5rem;
+        }
+
+        nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #0a5266;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            margin-left: 1rem;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ead50;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Section */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--text-dark);
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .section-intro {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Doctor Info Card */
+        .doctor-card {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 1rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 8px 24px rgba(13, 107, 127, 0.2);
+        }
+
+        .doctor-header {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .doctor-avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 1rem;
+            background: rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 3px solid rgba(255,255,255,0.3);
+        }
+
+        .doctor-intro h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .doctor-title {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .doctor-highlights {
+            display: flex;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .highlight-item {
+            background: rgba(255,255,255,0.15);
+            padding: 0.8rem 1.5rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .highlight-item strong {
+            display: block;
+            font-size: 1.3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .highlight-item small {
+            opacity: 0.9;
+        }
+
+        .credentials {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .credentials h4 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .credential-item {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+        }
+
+        .credential-item:last-child {
+            border-bottom: none;
+        }
+
+        .credential-item:before {
+            content: "✓";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        /* Why Choose Us */
+        .why-choose-us {
+            background-color: var(--bg-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(13, 107, 127, 0.1);
+            text-align: center;
+            border-top: 4px solid var(--accent-color);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border-left: 4px solid var(--primary-color);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(13, 107, 127, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(13, 107, 127, 0.15);
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card ul {
+            list-style-position: inside;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .service-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .service-card li:before {
+            content: "✓ ";
+            color: var(--accent-color);
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: var(--bg-light);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(13, 107, 127, 0.1);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .testimonial-detail {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        .stars {
+            color: #f59e0b;
+            margin-bottom: 0.8rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .about-text h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--bg-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-item {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 0.5rem;
+        }
+
+        .contact-info-item strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info-item p {
+            color: var(--text-light);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 0.5rem;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(13, 107, 127, 0.1);
+        }
+
+        /* CTA Box */
+        .cta-box {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            border-radius: 1rem;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-box h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            color: rgba(255,255,255,0.9);
+            margin: 1rem 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        footer .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        footer .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        footer h4 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            .btn-group {
+                flex-direction: column;
+            }
+
+            .btn-whatsapp {
+                margin-left: 0;
+            }
+
+            .doctor-header {
+                grid-template-columns: 1fr;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .trust-badge {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 8px rgba(13, 107, 127, 0.1);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .trust-badge-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .trust-badge-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .trust-badge-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        .trust-badge-text strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .trust-badge-text small {
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="shakti_logo.jpg" alt="SHAKTI Physiotherapy and Fitness Center" style="height: 50px; width: auto; object-fit: contain;">
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#doctor">Dr. Mena</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Move Better • Live Stronger</h1>
+            <div class="hero-tagline">Your Health, Our Priority</div>
+            <p>Led by Dr. Mena Jivani with 10+ years of experience treating 1000+ patients. Expert physiotherapy and fitness care for joint pain, sciatica, arthritis, sports injuries, and complete rehabilitation.</p>
+            <div class="btn-group">
+                <a href="tel:9724483937" class="btn btn-primary">📞 Call: 9724483937</a>
+                <a href="https://wa.me/919724483937?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20SHAKTI%20Physiotherapy%20Center" class="btn btn-whatsapp">💬 WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section class="why-choose-us" id="doctor">
+        <div class="container">
+            <h2>Meet Dr. Mena Jivani</h2>
+
+            <div class="doctor-card">
+                <div class="doctor-header">
+                    <div class="doctor-avatar">👩‍⚕️</div>
+                    <div class="doctor-intro">
+                        <h3>Dr. Mena Jivani</h3>
+                        <div class="doctor-title">Consultant Physiotherapist</div>
+                        <div class="doctor-highlights">
+                            <div class="highlight-item">
+                                <strong>10+</strong>
+                                <small>Years of Experience</small>
+                            </div>
+                            <div class="highlight-item">
+                                <strong>1000+</strong>
+                                <small>Patients Treated</small>
+                            </div>
+                            <div class="highlight-item">
+                                <strong>100%</strong>
+                                <small>Patient Satisfaction</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credentials">
+                    <h4>📚 Qualifications & Certifications</h4>
+                    <div class="credential-item">Bachelor of Physiotherapy (B.P.T)</div>
+                    <div class="credential-item">McKenzie Therapy Certified</div>
+                    <div class="credential-item">Dry Needling Specialist</div>
+                    <div class="credential-item">Cupping Therapy Expert</div>
+                    <div class="credential-item">Pilates Instructor</div>
+                    <div class="credential-item">Aerobic & Fitness Trainer</div>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 3rem; color: var(--text-dark);">Why Patients Trust Dr. Mena</h3>
+            <div class="trust-badge">
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">✓</div>
+                    <div class="trust-badge-text">
+                        <strong>Decade of Excellence</strong>
+                        <small>10+ years of specialized physiotherapy experience</small>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">✓</div>
+                    <div class="trust-badge-text">
+                        <strong>Proven Results</strong>
+                        <small>Successfully treated 1000+ patients with high recovery rates</small>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">✓</div>
+                    <div class="trust-badge-text">
+                        <strong>Advanced Techniques</strong>
+                        <small>McKenzie Method, Dry Needling, and modern rehabilitation approaches</small>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">✓</div>
+                    <div class="trust-badge-text">
+                        <strong>Personalized Care</strong>
+                        <small>Each patient receives a customized treatment plan based on their condition</small>
+                    </div>
+                </div>
+                <div class="trust-badge-item">
+                    <div class="trust-badge-icon">✓</div>
+                    <div class="trust-badge-text">
+                        <strong>Comprehensive Services</strong>
+                        <small>From therapeutic treatment to fitness training and wellness programs</small>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 3rem; margin-bottom: 2rem; color: var(--text-dark);">Why Choose SHAKTI?</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👩‍⚕️</div>
+                    <h3>Expert Consultant</h3>
+                    <p>Dr. Mena Jivani - Highly experienced Consultant Physiotherapist with proven track record</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Evidence-Based Care</h3>
+                    <p>Using proven, scientifically-backed treatment methods and latest techniques</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Personalized Plans</h3>
+                    <p>Custom treatment tailored to your specific condition and recovery goals</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Quick Results</h3>
+                    <p>Most patients see significant improvement in 2-4 weeks</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Home Visits</h3>
+                    <p>Convenient treatment at your home for immobile or busy patients</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Quality</h3>
+                    <p>Premium care at reasonable rates accessible to everyone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-intro">Comprehensive physiotherapy and fitness solutions using advanced techniques and personalized approach</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🦵 Joint Pain</h3>
+                    <p>Professional care for neck, back, shoulder, knee pain using McKenzie Method</p>
+                    <ul>
+                        <li>Neck & Back Pain</li>
+                        <li>Shoulder Pain</li>
+                        <li>Knee Pain</li>
+                        <li>McKenzie Therapy</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🦴 Arthritis Treatment</h3>
+                    <p>Specialized care for arthritis management and mobility improvement</p>
+                    <ul>
+                        <li>Osteoarthritis</li>
+                        <li>Rheumatoid Arthritis</li>
+                        <li>Pain Relief</li>
+                        <li>Mobility Enhancement</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>💪 Muscle & Ligament</h3>
+                    <p>Recovery from muscle strains and ligament injuries with advanced therapy</p>
+                    <ul>
+                        <li>Muscle Strains</li>
+                        <li>Ligament Sprains</li>
+                        <li>Soft Tissue Therapy</li>
+                        <li>Progressive Rehab</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🏃 Sports Injury</h3>
+                    <p>Get back in the game with sport-specific rehabilitation</p>
+                    <ul>
+                        <li>Acute Injuries</li>
+                        <li>Overuse Injuries</li>
+                        <li>Recovery Programs</li>
+                        <li>Performance Training</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🦴 Joint Replacement</h3>
+                    <p>Post-surgical rehabilitation and recovery management</p>
+                    <ul>
+                        <li>Pre-Op Training</li>
+                        <li>Post-Op Rehab</li>
+                        <li>Strength Building</li>
+                        <li>Functional Recovery</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>⚡ Sciatica Relief</h3>
+                    <p>Fast, proven relief from sciatic and nerve pain with dry needling</p>
+                    <ul>
+                        <li>Leg Pain</li>
+                        <li>Nerve Mobility</li>
+                        <li>Dry Needling</li>
+                        <li>Cupping Therapy</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🏥 Post-Fracture Care</h3>
+                    <p>Safe recovery after fracture healing with progressive rehabilitation</p>
+                    <ul>
+                        <li>Progressive Strengthening</li>
+                        <li>Mobility Restoration</li>
+                        <li>Functional Rehab</li>
+                        <li>Return to Activities</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🧠 Neurological Conditions</h3>
+                    <p>Care for stroke, Parkinson's, and neurological disorders</p>
+                    <ul>
+                        <li>Post-Stroke Rehab</li>
+                        <li>Balance Training</li>
+                        <li>Mobility Enhancement</li>
+                        <li>Independence Support</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🔗 Cervical Spondylitis</h3>
+                    <p>Targeted treatment for neck arthritis and related conditions</p>
+                    <ul>
+                        <li>Neck Pain Relief</li>
+                        <li>Stiffness Reduction</li>
+                        <li>Manual Therapy</li>
+                        <li>Posture Correction</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🔗 Lumbar Spondylitis</h3>
+                    <p>Effective lower back pain management and spinal mobility</p>
+                    <ul>
+                        <li>Back Pain Relief</li>
+                        <li>Core Strengthening</li>
+                        <li>Spinal Mobility</li>
+                        <li>Posture Training</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>🧘 Pilates</h3>
+                    <p>Core strength, flexibility, and body conditioning programs</p>
+                    <ul>
+                        <li>Core Training</li>
+                        <li>Flexibility Work</li>
+                        <li>Posture Improvement</li>
+                        <li>Group Classes</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>💪 Aerobic & Strength</h3>
+                    <p>Cardiovascular fitness and strength training under expert guidance</p>
+                    <ul>
+                        <li>Aerobics Classes</li>
+                        <li>Strength Training</li>
+                        <li>Fitness Conditioning</li>
+                        <li>Endurance Building</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <h3>💉 Dry Needling & Cupping</h3>
+                    <p>Advanced techniques for rapid pain relief and muscle recovery</p>
+                    <ul>
+                        <li>Dry Needling</li>
+                        <li>Cupping Therapy</li>
+                        <li>Trigger Point Release</li>
+                        <li>Rapid Relief</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Patient Success Stories</h2>
+            <p class="section-intro">Real results from real patients at SHAKTI Physiotherapy Center</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I came to the physiotherapy centre with severe Back pain (L4-L5 Spinal Segment), and within just 15 days, my pain had completely disappeared. Dr Mena Jivani has treated me exceptionally well. They are not only skilled professionals but also incredibly humble and caring individuals. The staff at the centre are attentive and supportive, making the entire experience very comfortable."</p>
+                    <div class="testimonial-author">Pratik Sharma</div>
+                    <div class="testimonial-detail">Severe Back Pain (L4-L5) | Pain-free in 15 days</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Mena is a very good physiotherapist. I am undergoing strength training with her guidance. I had neck, leg, flat foot issues which is resolved within 15 days of training. I can see significant change in my energy. She is very sincere and punctual towards her work at the same time friendly and humble makes you comfortable easily. Even listens to all your complains patiently."</p>
+                    <div class="testimonial-author">Abhigna Amin</div>
+                    <div class="testimonial-detail">Neck, Leg & Flat Foot Issues | Complete resolution in 15 days</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I took physiotherapy sessions from Mena after my ACL reconstruction, and I had a really good experience. The treatment was very effective, and the home visits made the sessions convenient and comfortable. Mena was very professional, patient, and supportive throughout my recovery and guided me properly with the exercises. I was able to recover very well within a span of 2 months."</p>
+                    <div class="testimonial-author">Janki Sharma</div>
+                    <div class="testimonial-detail">Post-ACL Reconstruction | Full recovery in 2 months</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"After my knee replacement I did physiotherapy with Dr. Mena and the result is very good. Dr Mena is very good and sweet. Excellent physiotherapy center! The therapist is professional, knowledgeable, and explains everything patiently. The clinic is clean and well-maintained."</p>
+                    <div class="testimonial-author">Shirin Pandit</div>
+                    <div class="testimonial-detail">Post-Knee Replacement Rehabilitation</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I have been going to her since more than a year in intervals need based. She is quite good and effective. Very dedicated and understands the patients need and accordingly does the treatment. Often go to her for fitness regime. She is very sincere and friendly, makes you comfortable easily."</p>
+                    <div class="testimonial-author">Bela Bapna</div>
+                    <div class="testimonial-detail">Long-term Patient | Fitness Regime & Rehabilitation</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I had a very good experience with the treatment and overall care. The therapist is professional, knowledgeable, and explains everything patiently. The approach is very friendly and the clinic is clean and well-maintained. Highly recommended for anyone looking for professional physiotherapy treatment."</p>
+                    <div class="testimonial-author">Depen Chandarana</div>
+                    <div class="testimonial-detail">Professional Care & Treatment | Highly Recommended</div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="color: var(--text-light); font-size: 1.1rem;">📍 <strong>Check our Google Reviews:</strong> SHAKTI Physiotherapy Center has 4.9+ ratings from 100+ verified patients</p>
+                <a href="https://maps.app.goo.gl/fEPV43K6obCPyviq7" target="_blank" class="btn btn-secondary" style="margin-top: 1rem;">View All Reviews on Google</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>📍 Contact Information</h3>
+
+                    <div class="contact-info-item">
+                        <strong>🏥 Clinic Name</strong>
+                        <p>SHAKTI Physiotherapy and Fitness Center</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <strong>👨‍⚕️ Consultant</strong>
+                        <p>Dr. Mena Jivani, B.P.T<br>10+ years experience</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <strong>📍 Address</strong>
+                        <p>307, Lotus Elite<br>Gotri - Sevasi Rd<br>Chandramauleshwar Nagar<br>Gotri, Vadodara<br>Gujarat 390021</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <strong>📞 Phone</strong>
+                        <p><a href="tel:9724483937" style="color: var(--primary-color); font-weight: bold;">9724483937</a></p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <strong>⏰ Working Hours</strong>
+                        <p>9:30 AM - 12:30 PM<br>4:00 PM - 8:00 PM<br><br>
+                        🏠 Home Visits Available</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Quick Contact Form</h3>
+                    <form onsubmit="handleSubmit(event)">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone Number (WhatsApp)" required>
+                        <input type="text" placeholder="Condition/Service Interested In" required>
+                        <textarea placeholder="Tell us more about your inquiry..." required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <p style="margin-top: 1rem; color: var(--text-light); font-size: 0.9rem;">
+                        We'll contact you within 1 hour during clinic hours. Prefer WhatsApp? Click the button below!
+                    </p>
+                </div>
+            </div>
+
+            <div class="cta-box">
+                <h3>Ready to Move Better & Live Stronger?</h3>
+                <p>Don't let pain control your life. Start your recovery with SHAKTI today.</p>
+                <p style="font-size: 0.95rem; opacity: 0.9;">Trusted by 1000+ patients | 10+ years of experience | Expert care</p>
+                <div class="btn-group" style="justify-content: center;">
+                    <a href="tel:9724483937" class="btn btn-primary">📞 Call: 9724483937</a>
+                    <a href="https://wa.me/919724483937?text=Hi,%20I%20would%20like%20to%20book%20an%20appointment%20at%20SHAKTI%20Physiotherapy%20Center" class="btn btn-whatsapp">💬 WhatsApp Now</a>
+                </div>
+                <p style="margin-top: 1rem;">⏰ Open: 9:30 AM - 12:30 PM | 4:00 PM - 8:00 PM | 🏠 Home Visits Available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div>
+                    <h4>SHAKTI Clinic</h4>
+                    <p>Physiotherapy & Fitness Center</p>
+                    <p>Move Better • Live Stronger</p>
+                    <p>Your Health, Our Priority</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#doctor">About Dr. Mena</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <p>Joint Pain Treatment</p>
+                    <p>Sciatica Relief</p>
+                    <p>Arthritis Care</p>
+                    <p>Sports Injuries</p>
+                    <p>Post-Fracture Rehab</p>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <p><strong>Phone:</strong><br><a href="tel:9724483937">9724483937</a></p>
+                    <p><strong>Hours:</strong><br>9:30 AM - 12:30 PM<br>4:00 PM - 8:00 PM</p>
+                    <p><strong>🏠 Home Visits</strong> Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SHAKTI Physiotherapy and Fitness Center. All rights reserved. | Gotri, Vadodara</p>
+                <p>Trusted by 1000+ patients | 10+ years of experience | Expert care by Dr. Mena Jivani</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const phone = form.elements[2].value;
+            const condition = form.elements[3].value;
+            const message = form.elements[4].value;
+
+            // Redirect to WhatsApp
+            const whatsappMessage = `Hi Dr. Mena, I found your SHAKTI clinic website. Condition: ${condition}. ${message}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            window.location.href = `https://wa.me/919724483937?text=${encodedMessage}`;
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
